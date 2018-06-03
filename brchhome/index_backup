@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <title>virtual dreamworld</title>
+    </head>
+
+    <body>
+        <script src="scripts.js"></script>
+
+        <div class="page-content-container">
+
+          <div class="flex-titlebar">
+            <div class="subtitle-div"> welcome to the directory of </div>
+            <div class="title-div"> Chambers, Brendan </div>
+          </div>
+
+          <ul class="nav-bar">
+              <li class="nav-item"> portfolio </li>
+              <li class="nav-item"> CV </li>
+              <li class="nav-item"> contact </li>
+          </ul>
+
+          <div class="bio-div">
+             <div class="text-item">
+                <br> I am a quantitative researcher. My expertise is in studying
+               cascades of activity within interconnected networks. <br> <br>
+
+                In my PhD research I focused on the microscopic neural networks of
+                neocortex.
+                I developed a framework for discovering
+                emergent patterns of coordination in these dynamic cellular
+                communication networks. <br> <br>
+
+                 This paradigm is a promising avenue for studying large-scale
+                communication patterns in our online society. <br> <br>
+
+                During my postdoctoral gap year I have been making this approach more concrete by learning new computational skills
+                 to acquire data and communicate results. <br> <br>
+
+                I am on the job market. Searching for ethically oriented work in
+                 analyzing and communicating complexity.
+
+             </div>
+
+             <div class="svg-item">
+                <img src="media/sample data figure.svg"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="xMidYMid meet"
+                >
+             </div>
+           </div>
+
+          <ul class="flex-container">
+            <li class="flex-item">mapping communication</li>
+            <li class="flex-item">biological neurons</li>
+            <li class="flex-item">spiking network models</li>
+            <li class="flex-item">CV</li>
+            <li class="flex-item">ethics statement</li>
+          </ul>
+
+
+
+        </div>
+
+    </body>
+</html>

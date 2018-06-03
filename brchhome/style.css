@@ -1,0 +1,123 @@
+
+
+.page-content-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-bar {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: #53c;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  padding: 0px;
+  justify-content: space-around;
+}
+
+.nav-item {
+  background: #222;
+  margin 4px;
+  color: #ccc;
+  font-weight: regular;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 4px;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 3em;
+  background-color: #333;
+  color: #ccc;
+  align-self: stretch;
+  margin: 4px;
+}
+
+div.subtitle-div {
+    background-color: #8cf;;
+    font-size: 1em;
+    padding = 5px;
+    text-align: center;
+}
+
+div.flex-titlebar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+div.title-div {
+    background-color: #29c;
+    font-size: 3em;
+    border: 5px solid black;
+    text-align: center;
+}
+
+div.bio-div {
+  align-items: stretch;
+  background-color: tomato;
+  display: flex;
+}
+
+div.content-section {
+  align-items: center;
+  display: flex;
+  background-color: #333;
+  align-content: stretch;
+}
+#section0 {
+  flex-direction: column;
+  align-items: center;
+}
+#section1 {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#section2 { }
+
+
+div.text-item {
+  display: flex;
+  align-items: center;
+  flex: 1 1 400;
+  background-color: #6c9;
+  background-color: #222;
+  color: #bbb;
+  font-size: 1em;
+  padding: 4px;
+  margin: 1vw;
+  min-width: 25vw;
+  align-self: stretch;
+  min-height: 15vh;
+}
+#header-text{
+  text-align: center;
+}
+#block-text {
+  text-align: justify;
+}
+
+.svg-item {
+  background-color: #fff;
+  margin: 1vw;
+  max-width: 600px;
+}
+#data-panel {
+  flex: 1 2 40vw;
+}
+#flow-panel {
+  flex: 1 2 40vw;
+}

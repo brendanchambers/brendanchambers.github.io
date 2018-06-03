@@ -1,0 +1,120 @@
+.nav-bar {
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 5px solid goldenrod;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  padding: 0px;
+  justify-content: space-around;
+}
+
+.nav-item {
+  background: #55c;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+div.flex-titlebar {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 10px;
+}
+
+div.subtitle-div {
+    background-color: #29c;
+    font-size: 1em;
+    padding = 5px;
+}
+
+div.title-div {
+    background-color: #29c;
+    font-size: 4em;
+    border: 5px solid black;
+}
+
+p {
+    color: #ccc;
+    font-size: 1em;
+    background-color: #330;
+    border: 5px solid #110;
+}
+
+p0 {
+  color: #000;
+  background-color: #8cf;
+}
+
+button {
+  font-size: 2em;
+}
+
+
+
+.flex-container {
+  min-height: 25vh;
+  border: 5px solid #041;
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+}
+
+.flex-item {
+  background: #595;
+  padding: 0px;
+  min-width: 200px;
+  margin: 10px;
+
+  line-height: 150px;
+  color: white;
+  font-weight: normal;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.button {
+  font-size: 2em;
+  color: #eee;
+}
+.red-button {
+    background-color: #a44;
+}
+
+.green-button {
+    background-color: #075;
+}
+
+.links line {
+  stroke: #000;
+  stroke-opacity: 0.1;
+}
+
+.nodes circle {
+
+}
+
+text {
+  fill: #000;
+  font: 10px sans-serif;
+  pointer-events: none;
+}
