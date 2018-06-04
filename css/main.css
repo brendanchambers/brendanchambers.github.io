@@ -26,6 +26,28 @@
   justify-content: space-around;
 }
 
+.nav-unrolled-menu {
+	margin: 0px;
+	padding-left: 0px;
+	list-style: none;
+	display: flex;
+	flex-direction: horizontal;
+	align-content: stretch;
+	flex-wrap: row-wrap;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.unrolled-item {
+  min-width: 50px;
+  min-height: 50px;
+  color: #222;
+  font-weight: regular;
+  font-size: 1.5em;
+  text-align: center;
+  flex-grow: 1;
+}
+
 .nav-item {
   background: #222;
   margin 4px;
@@ -36,6 +58,12 @@
   padding: 4px;
 }
 
+#item-about { background: #ccc; }
+#item-resume { background: #afa; }
+#item-portfolio { background: #aa3; }
+#item-cv { background: #faa; }
+#item-contact { background: #3aa; }
+
 .section-header {
   text-align: center;
   font-size: 3em;
@@ -43,6 +71,10 @@
   color: #ccc;
   align-self: stretch;
   margin: 4px;
+}
+
+.draft-hyde {
+	visibility: collapse;
 }
 
 div.subtitle-div {
@@ -62,7 +94,7 @@ div.flex-titlebar {
 div.title-div {
     background-color: #29c;
     font-size: 3em;
-    border: 5px solid black;
+    border: 0px solid black;
     text-align: center;
 }
 
@@ -88,6 +120,18 @@ div.content-section {
 }
 #section2 { }
 
+a:link {
+	color: #aaa;
+}
+a:visited {
+	color: #2c9;
+}
+a:hover {
+	color: #66f;
+}
+a:active {
+	color: #4a3;
+}
 
 div.text-item {
   display: flex;
@@ -98,7 +142,8 @@ div.text-item {
   color: #bbb;
   font-size: 1em;
   padding: 4px;
-  margin: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   min-width: 25vw;
   align-self: stretch;
   min-height: 15vh;
