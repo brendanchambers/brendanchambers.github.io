@@ -31,11 +31,13 @@
 	padding-left: 0px;
 	list-style: none;
 	display: flex;
-	flex-direction: horizontal;
+	flex-direction: column;
 	align-content: stretch;
 	flex-wrap: row-wrap;
 	justify-content: space-between;
 	align-items: stretch;
+	visibility: collapse;
+
 }
 
 .unrolled-item {
@@ -56,6 +58,7 @@
   font-size: 1.5em;
   text-align: center;
   padding: 4px;
+  flex-grow: 1;
 }
 
 #item-about { background: #ccc; }
