@@ -35,16 +35,10 @@
   flex-wrap: row-wrap;
   justify-content: space-between;
   align-items: stretch;
-  overflow:hidden;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  transition: all .5s ease;
   display: none;
-  heigh: 0;
 }
 
 .nav-main-menu.unrolled {
-  height: auto;
   display: flex;
 }
 
@@ -71,11 +65,11 @@
   flex-grow: 1;
 }
 
-#item-about { background: #3af; }
+#item-about { background: #3af; display: none; }
 #item-resume { background: #ee0; }
 #item-portfolio { background: #d55; }
 #item-cv { background: #2a4; }
-#item-contact { background: #55d; }
+#item-contact { background: #55d; display: none;}
 
 .section-header {
   text-align: center;
