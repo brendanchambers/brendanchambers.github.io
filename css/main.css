@@ -10,11 +10,11 @@ body {
 }
 
 a:link {
-  color: #aaa;
+  color: #014;
   text-decoration: none;
 }
 a:visited {
-  color: #aaa;
+  color: #014;
   text-decoration: none;
 }
 a:hover {
@@ -25,6 +25,8 @@ a:active {
   color: #4a3;
   text-decoration: none;
 }
+
+
 
 .page-content-container {
   display: flex;
@@ -60,7 +62,6 @@ a:active {
   flex-direction: column;
   align-content: stretch;
   justify-content: center;
-  flex-wrap: row-wrap;
   display: none;
 }
 
@@ -94,8 +95,8 @@ a:active {
 }
 
 #item-about { background: #3af; display: none; }
-#item-resume { background: #ee0; }
-#item-portfolio { background: #d55; }
+#item-resume { background: #ee0; color: #990; }
+#item-portfolio { background: #d55; color: #822; }
 #item-cv { background: #2a4; }
 #item-contact { background: #55d; display: none;}
 
@@ -148,27 +149,7 @@ div.title-div {
     text-align: center;
 }
 
-div.bio-div {
-  align-items: stretch;
-  background-color: tomato;
-  display: flex;
-}
 
-div.content-section {
-  align-items: center;
-  display: flex;
-  background-color: #333;
-  align-content: stretch;
-}
-#section0 {
-  flex-direction: column;
-  align-items: center;
-}
-#section1 {
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-#section2 { }
 
 
 
@@ -183,6 +164,7 @@ div.text-item {
   padding: 4px;
   margin-left: 1vw;
   margin-right: 1vw;
+  margin-bottom: 1vw;
   min-width: 25vw;
   align-self: stretch;
   min-height: 15vh;
@@ -191,7 +173,18 @@ div.text-item {
   text-align: center;
 }
 #block-text {
-  text-align: justify;
+  text-align: left;
+  padding: 1vw;
+}
+
+div.reference-items {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
 }
 
 .svg-item {
@@ -214,8 +207,45 @@ div.text-item {
 
 /* todo index.html unique resources migrate here */
 
+img.profile-img {
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+}
 
+div.content-section {
+  align-items: center;
+  display: flex;
+  background-color: #333;
+  align-content: stretch;
+}
+#section0 {
+  flex-direction: column;
+  align-items: center;
+}
+#section1 {
+  flex-direction: row;
+  align-items: stretch;
+}
+#section2 {
+  flex-direction: row;
+  align-items: stretch;
+}
 
+a.bright {
+  background-color: #29c;
+  background-color: #222;
+  color: #ccc;
+}
+
+a.bright.reference-item {
+  padding: 1.5vw;
+}
+
+a.bright:visited { color: #bbb; }
+a.bright:hover { color: #d8d; }
 
 
 
