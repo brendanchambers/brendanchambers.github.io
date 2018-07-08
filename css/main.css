@@ -26,6 +26,11 @@ a:active {
   text-decoration: none;
 }
 
+.img-container {
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+}
+
 
 
 .page-content-container {
@@ -150,13 +155,9 @@ div.title-div {
 
 
 
-
-
 div.text-item {
   display: flex;
-  align-items: center;
-  flex: 1 1 400;
-  background-color: #6c9;
+  flex: 1 1 350;
   background-color: #222;
   color: #bbb;
   font-size: 1em;
@@ -164,18 +165,14 @@ div.text-item {
   margin-left: 1vw;
   margin-right: 1vw;
   margin-bottom: 1vw;
-  min-width: 25vw;
-  align-self: stretch;
-  min-height: 15vh;
+  align-self: stretch;  
+  align-items: center;  
 }
-#header-text{
-  text-align: center;
-}
-#block-text {
+
+.block-text {
   text-align: left;
   padding: 1vw;
 }
-
 
 
 .svg-item {
@@ -211,13 +208,12 @@ div.content-section {
 #section1 {
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
 img.profile-img {
-  width: 50%;
-  height: 50%;
-  margin-right: 1vw;
-  margin-bottom: 1vw;
+  width:100%;
+  height: auto;
 }
 
 #section2 {
@@ -250,8 +246,11 @@ a.bright:active { color: #4a3; }
 #section2 {
   flex-direction: row;
   align-items: stretch;
-  margin-top: 0vw;
+  margin-top: 0vw; 
 }
+#index-p1 {  }
+#index-p2 {  }
+#index-p3 {  }
 
 
 
