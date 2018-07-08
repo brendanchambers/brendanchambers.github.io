@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function() { // check document rea
 	let page1Button = document.querySelector('#button1');
 	let page2Button = document.querySelector('#button2');
 	let page3Button = document.querySelector('#button3');
+	// gallery images
+	let galleryImages = Array.from(document.querySelectorAll('.img-container'))
+	console.log(galleryImages)
 
 	// nav bar funcionality
 	function fixNav() {
@@ -31,10 +34,10 @@ document.addEventListener("DOMContentLoaded", function() { // check document rea
 		let visiblePageIdString = '#page' + pageID;
 
 		for (let page_idx = 0; page_idx < 3; page_idx++) {
-			// set each page to collapsed
+			// set each page to hidden
 			idString = '#page' + (page_idx+1);
 			let invisiblePage = document.querySelector(idString);
-			invisiblePage.classList.remove("unrolled");
+			invisiblePage.classList.remove("unrolled"); // do we need to check the cases where unrolled is already absent from the class list?
 		}
 		// set pageID'th page to unrolled
 		visiblePage = document.querySelector(visiblePageIdString)
@@ -47,5 +50,7 @@ document.addEventListener("DOMContentLoaded", function() { // check document rea
     page1Button.addEventListener('click', setPage);
     page2Button.addEventListener('click', setPage);
     page3Button.addEventListener('click', setPage);
+
+
 
 });
