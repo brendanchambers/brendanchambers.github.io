@@ -27,8 +27,11 @@ a:active {
 }
 
 .img-container {
+  align-self: stretch;
+  background-color: #222;
   margin-right: 1vw;
   margin-bottom: 1vw;
+  margin-left: 1vw;
 }
 
 
@@ -99,9 +102,9 @@ a:active {
 
 
 #item-about { background: #3af; display: none; }
-#item-resume { background: #ee0; color: #990; }
-#item-portfolio { background: #d55; color: #822; }
-#item-cv { background: #2a4; }
+#item-resume { background: #ecc; color: #990; }
+#item-portfolio { background: #e77; color: #822; }
+#item-cv { background: #7bb; color: #066; }
 #item-contact { background: #55d; display: none;}
 
 
@@ -155,29 +158,10 @@ div.title-div {
 
 
 
-div.text-item {
-  display: flex;
-  flex: 1 1 350;
-  background-color: #222;
-  color: #bbb;
-  font-size: 1em;
-  padding: 4px;
-  margin-left: 1vw;
-  margin-right: 1vw;
-  margin-bottom: 1vw;
-  align-self: stretch;  
-  align-items: center;  
-}
-
-.block-text {
-  text-align: left;
-  padding: 1vw;
-}
 
 
 .svg-item {
   background-color: #fff;
-  margin: 1vw;
   max-width: 600px;
 }
 #data-panel {
@@ -209,17 +193,63 @@ div.content-section {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #333;
 }
 
 img.profile-img {
   width:100%;
   height: auto;
+  max-width: 400px;
+  flex: 1 1 350px;
+}
+div.text-item {
+  display: flex;
+  align-self: stretch;  
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.block-text {
+  text-align: left;
+  padding: 1vw;
+}
+.paragraph {
+  font-size: 1em;
+  padding: 4px;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-bottom: 1vw;
+}
+.dark {  
+  background-color: #222;
+  color: #ccc;
+}
+.yellow {
+  background-color: #ee0;
+  color: #000;
+}
+.cyan {
+  background-color: #0cc;
+  color: #000;
+}
+.bright-p {
+  background-color: #fff;
+  color: #000;
+}
+.magenta {
+  background-color: #e0e;
+  color: #000;
 }
 
-#section2 {
-  flex-direction: row;
-  align-items: stretch;
+#index-p1 {
+  flex: 1 1 100px;  
 }
+#index-p2 {
+  flex: 3 3 400px;
+}
+
 .reference-items {
   display: flex;
   flex-direction: column;
@@ -243,14 +273,21 @@ a.bright:visited { color: #bbb; }
 a.bright:hover { color: #d8d; }
 a.bright:active { color: #4a3; }
 
-#section2 {
+#section2 { 
+  background-color: #222;
   flex-direction: row;
   align-items: stretch;
-  margin-top: 0vw; 
+  padding-top: 1vw; 
+}
+#section3 {
+  background-color: #000;
+  padding-top: 1vw;
 }
 #index-p1 {  }
 #index-p2 {  }
 #index-p3 {  }
+
+
 
 
 
