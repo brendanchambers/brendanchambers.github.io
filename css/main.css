@@ -46,6 +46,27 @@ a:active {
   margin-right: auto;
 }
 
+
+div.flex-titlebar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+div.subtitle-div {
+    background-color: #71cddd;
+    font-size: 1em;
+    padding = 5px;
+    text-align: center;
+}
+div.title-div {
+    background-color: #5392ff;
+    font-size: 3em;
+    border: 0px solid black;
+    text-align: center;
+}
+
+
 .nav-bar {
   min-height: 40px;
   padding: 0;
@@ -62,7 +83,6 @@ a:active {
   padding: 0px;
   justify-content: space-around;
 }
-
 .nav-item {
   background: #222;
   margin 4px;
@@ -73,7 +93,6 @@ a:active {
   padding: 4px;
   flex-grow: 1;
 }
-
 .nav-main-menu {
 	margin: 0px;
 	padding-left: 0px;
@@ -83,11 +102,9 @@ a:active {
   justify-content: center;
   display: none;
 }
-
 .nav-main-menu.unrolled {
   display: flex;
 }
-
 .unrolled-item {
   color: #222;
   min-height: 40px;
@@ -99,12 +116,10 @@ a:active {
   justify-content: center;
   text-align: center;
 }
-
-
 #item-about { background: #3af; display: none; }
-#item-resume { background: #ecc; color: #990; }
-#item-portfolio { background: #e77; color: #822; }
-#item-cv { background: #7bb; color: #066; }
+#item-resume { background: #71cddd; color: #000; }
+#item-portfolio { background: #34bc6e; color: #000; }
+#item-cv { background: #5392ff; color: #000; }
 #item-contact { background: #55d; display: none;}
 
 
@@ -133,27 +148,6 @@ div.section-header {  /* from portfolio.html */
 
 .draft-hyde {
 	display: none;
-}
-
-div.subtitle-div {
-    background-color: #8cf;;
-    font-size: 1em;
-    padding = 5px;
-    text-align: center;
-}
-
-div.flex-titlebar {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-}
-
-div.title-div {
-    background-color: #29c;
-    font-size: 3em;
-    border: 0px solid black;
-    text-align: center;
 }
 
 
@@ -227,11 +221,11 @@ div.text-item {
   color: #ccc;
 }
 .yellow {
-  background-color: #ee0;
+  background-color: #ffb000;
   color: #000;
 }
 .cyan {
-  background-color: #0cc;
+  background-color: #71cddd;
   color: #000;
 }
 .bright-p {
@@ -239,7 +233,7 @@ div.text-item {
   color: #000;
 }
 .magenta {
-  background-color: #e0e;
+  background-color: #ff509e;
   color: #000;
 }
 
