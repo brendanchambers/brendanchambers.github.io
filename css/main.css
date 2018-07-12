@@ -274,13 +274,13 @@ a.bright:hover { color: #d8d; }
 a.bright:active { color: #4a3; }
 
 #section2 { 
-  background-color: #222;
-  flex-direction: row;
+  background-color: #111;
+  flex-direction: column;
   align-items: stretch;
   padding-top: 1vw; 
 }
 #section3 {
-  background-color: #000;
+  background-color: #111;
   padding-top: 1vw;
 }
 #index-p1 {  }
