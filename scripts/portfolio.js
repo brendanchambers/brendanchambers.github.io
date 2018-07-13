@@ -15,12 +15,10 @@ document.addEventListener("DOMContentLoaded", function() { // check document rea
 	let page2Button = document.querySelector('#button2');
 	let page3Button = document.querySelector('#button3');
 
-	let gallery = document.querySelectorAll('.portfolio-items')[0];
-	console.log(gallery);
+	let galleries = document.querySelectorAll('.portfolio-items');
 
 	// gallery images // todo ditch this
 	let galleryImages = Array.from(document.querySelectorAll('.img-container'));
-	console.log(galleryImages) // for testing
 
 	// load the gallery on first visit
 	loadJSON(function(response) {
@@ -29,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function() { // check document rea
 	    //console.log(json_response);
 
 	    prefix = "media/"; // turn the image names into paths
-	    page_imgs = json_response.p0
+	    page_imgs = json_response.p0;
+	    gallery = galleries[0];
+	    
 	    //console.log(page_imgs)
 	    html_chunks = page_imgs.map( img_name =>  // todo replace this with appropriate html:
 `<a href="${prefix+img_name}.svg">
@@ -43,11 +43,8 @@ document.addEventListener("DOMContentLoaded", function() { // check document rea
 	    //console.log(html_chunks)
 	    //todo write html based on image_paths & insert into DOM
 	    let galleryHTML = html_chunks.reduce( (oldString,newString) => oldString+newString, "");
-		console.log(galleryHTML);
 
 		gallery.innerHTML = galleryHTML;
-		console.log(gallery);
-
 		// todo insert galleryHTML into DOM
 	});
 
@@ -63,13 +60,53 @@ document.addEventListener("DOMContentLoaded", function() { // check document rea
 	}
 	// gallery page functionality
 	function setPage(e) {
+
+		// todo check if gallery paths are loaded
+		// if not:
+		var xobj = new XMLHttpRequest();
+	        xobj.overrideMimeType("application/json");
+	    xobj.open('GET', 'media/portfolio_page.json', true); // Replace 'my_data' with the path to your file
+	    xobj.onreadystatechange = function () {
+	          if (xobj.readyState == 4 && xobj.status == "200") {
+	            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+	            response = xobj.responseText;
+	          }
+	    };
+	    xobj.send(null);  // ?
+	    json_response = JSON.parse(response);
+		
+	    //console.log(json_response);
+	    prefix = "media/"; // turn the image names into paths
+
 		if (e.target.id == 'button1') {
 			pageID = 1;
+			page_imgs = json_response.p0;
+			gallery=galleries[0];
 		} else if (e.target.id =='button2') {
 			pageID = 2;
+			page_imgs = json_response.p1;
+			gallery=galleries[1];
 		} else if (e.target.id == 'button3') {
 			pageID = 3;
+			page_imgs = json_response.p2;
+			gallery=galleries[2];
 		}
+
+		 //console.log(page_imgs)
+	    html_chunks = page_imgs.map( img_name =>  // todo replace this with appropriate html:
+`<a href="${prefix+img_name}.svg">
+    <div class="img-container">
+      <img class="svg-item square" src="${prefix+img_name}.svg"
+      />
+    </div>
+  </a>
+`
+		);
+	    //console.log(html_chunks)
+	    //todo write html based on image_paths & insert into DOM
+	    let galleryHTML = html_chunks.reduce( (oldString,newString) => oldString+newString, "");
+		gallery.innerHTML = galleryHTML;
+			    
 		let visiblePageIdString = '#page' + pageID;
 
 		for (let page_idx = 0; page_idx < 3; page_idx++) {
