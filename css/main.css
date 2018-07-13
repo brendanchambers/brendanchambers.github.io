@@ -33,6 +33,7 @@ a:active {
   margin-bottom: 1vw;
   margin-left: 1vw;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -244,12 +245,22 @@ div.text-item {
   background-color: #ff509e;
   color: #000;
 }
+.blue {
+  background-color: #5392ff;
+  color: #000;
+}
 
 #index-p1 {
   flex: 1 1 100px;  
 }
 #index-p2 {
   flex: 3 3 400px;
+}
+#index-skills-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-end; 
 }
 
 .reference-items {
@@ -276,14 +287,13 @@ a.bright:hover { color: #d8d; }
 a.bright:active { color: #4a3; }
 
 #section2 { 
-  background-color: #111;
+  background-color: #1a1a1a;
   flex-direction: column;
   align-items: stretch;
-  padding-top: 1vw; 
+  padding-top: 5vw; 
 }
 #section3 {
-  background-color: #111;
-  padding-top: 1vw;
+  background-color: #1a1a1a;
 }
 #index-p1 {  }
 #index-p2 {  }
@@ -347,10 +357,9 @@ div.portfolio-items {
 
 }
 .svg-item.spanning-svg {
-  width: 200px;
-  height: auto;
-  object-fit: contain;
-
+  flex: 1 1 150px;
+  width: auto;
+  object-fit: cover;
 }
 
 .svg-item.wide-svg {
