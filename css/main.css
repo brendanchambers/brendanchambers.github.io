@@ -141,7 +141,7 @@ div.title-div {
 
 .section-header { /* from index.html */
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   background-color: #333;
   color: #ccc;
   align-self: stretch;
@@ -150,7 +150,7 @@ div.title-div {
  /* todo resolve this redundancy */
 div.section-header {  /* from portfolio.html */
   text-align: center;
-  font-size: 3em;
+  font-size: 2em;
   background-color: #333;
   color: #ccc;
   align-self: stretch;
@@ -290,8 +290,8 @@ a.bright:active { color: #4a3; }
   background-color: #1a1a1a;
   flex-direction: column;
   align-items: stretch;
-  padding-top: 5vw;
-  padding-bottom: 5vw; 
+  padding-top: 3vw;
+  padding-bottom: 3vw; 
 }
 #section3 {
   background-color: #1a1a1a;
