@@ -2,21 +2,19 @@
 	"p0": ["define directed clustering",
 			"activity flow and participation",
 			"history dependent recruitment and diversity",
-			"sample data figure",
-			"sampling the model"
+			"sample data figure"
 	],
 
-	"p1": ["motif abundance",
-		"multiplex definitions",
-		"recruitment map_chain",
+	"p1": ["multiplex definitions",
 		"define local clustering",
-		"subthreshold voltage"
+		"subthreshold voltage",
+		"sampling the model"
 	],
 
 	"p2": ["striking image",
 		"structure-function",
-		"iterative bayesian inference",
 		"verifying pairwise temporal structure",
-		"error motifs comparisons"
+		"recruitment map_chain",
+		"motif abundance"
 	]
 }
